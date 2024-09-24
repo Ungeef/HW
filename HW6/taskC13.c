@@ -29,6 +29,5 @@ int main(void)
     scanf("%lf",&x);
     x *= PI/180.0;
 	printf("%.3f", cosinus(x));
-	
 	return 0;
 }

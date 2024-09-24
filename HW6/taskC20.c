@@ -17,8 +17,8 @@ int is_brack_correct(char a)
  
 int main()
 {
-char input;
-int ans;
+	char input;
+	int ans;
     while (1)
     {
         scanf("%c", &input);
@@ -27,7 +27,5 @@ int ans;
     ans = is_brack_correct(input);
     }
     ans ? printf("YES") : printf("NO");
-
-
     return 0;
 }

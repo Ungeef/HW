@@ -20,6 +20,5 @@ int main(void)
 	int a;
 	scanf("%d", &a);
 	printf("%" PRIu64, counter(a));
-	
 	return 0;
 }
