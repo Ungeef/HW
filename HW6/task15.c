@@ -18,7 +18,7 @@ int grow_up(int n)
 int main()
 {
 	int n;
-    scanf("%d", &n);
-    grow_up(n) ? printf("YES") : printf("NO");
-    return 0;
+	scanf("%d", &n);
+	grow_up(n) ? printf("YES") : printf("NO");
+	return 0;
 }

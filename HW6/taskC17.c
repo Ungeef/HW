@@ -22,7 +22,7 @@ int is_happy_number(int n)
 int main()
 {
 	int n;
-    scanf("%d", &n);
-    is_happy_number(n) ? printf("YES") : printf("NO");
-    return 0;
+	scanf("%d", &n);
+	is_happy_number(n) ? printf("YES") : printf("NO");
+	return 0;
 }

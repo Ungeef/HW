@@ -26,8 +26,8 @@ double cosinus(float x)
 int main(void)
 {	
 	double x;
-    scanf("%lf",&x);
-    x *= PI/180.0;
+	scanf("%lf",&x);
+	x *= PI/180.0;
 	printf("%.3f", cosinus(x));
 	return 0;
 }
