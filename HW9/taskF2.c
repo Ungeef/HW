@@ -11,12 +11,12 @@ void sort_even_odd(int n, int a[])
 		{
 			if(karetka != i)
 			{
-					int temp = a[i];	
-					for(int j = i; j > karetka; j--)
-					{
-						a[j] = a[j-1];
-					}
-					a[karetka] = temp;
+				int temp = a[i];	
+				for(int j = i; j > karetka; j--)
+				{
+					a[j] = a[j-1];
+				}
+				a[karetka] = temp;
 			}
 			karetka++;
 		}
@@ -51,5 +51,5 @@ int main(void)
 	int count = Scan(array, SIZE);
 	sort_even_odd(count, array);
 	print(array, count);
-return 0;
+	return 0;
 }

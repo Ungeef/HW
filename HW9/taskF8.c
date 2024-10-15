@@ -13,7 +13,7 @@ int find_max_array(int size, int a[])
 
 int miss_dig(int size, int a[], int max)
 {
-	int exist = 0;    
+	int exist = 0;
 	for(int i = max - 1; i > max - size + 1; i--)
 	{
 		for(int j = 0; j < size; j++)
@@ -49,5 +49,5 @@ int main(void)
 	int real_size = Scan(array, SIZE);
 	int max = find_max_array(real_size, array);
 	printf("%d", miss_dig(real_size, array, max));
-return 0;     
+	return 0;
 }

@@ -55,5 +55,5 @@ int main(void)
 	Scan(array, SIZE);
 	even_odd(array, SIZE);
 	print(array, SIZE);
-return 0;
+	return 0;
 }

@@ -37,5 +37,5 @@ int main(void)
 	int array[SIZE];
 	int real_size = Scan(array, SIZE);
 	printf("%d", is_two_same(real_size, array));
-return 0;
+	return 0;
 }

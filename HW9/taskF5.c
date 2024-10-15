@@ -37,5 +37,5 @@ int main(void)
 	int array[SIZE];
 	int real_size = Scan(array, SIZE);
 	printf("%d", find_max_array(real_size, array));
-return 0;
+	return 0;
 }

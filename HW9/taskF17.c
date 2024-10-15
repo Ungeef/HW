@@ -30,5 +30,5 @@ int main(void)
 	int array[SIZE][SIZE];
 	int count = Scan(array, SIZE);
 	printf("%d", sled_matrix(array, SIZE));
-return 0;
+	return 0;
 }

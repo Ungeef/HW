@@ -39,5 +39,5 @@ int main(void)
 	int array[SIZE][SIZE];
 	int count = Scan(array, SIZE);
 	printf("%d", sum_max(array, SIZE));
-return 0;
+	return 0;
 }

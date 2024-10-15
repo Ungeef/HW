@@ -42,5 +42,5 @@ int main(void)
 	int count = Scan(array, SIZE);
 	int dig = arif(array, SIZE);
 	printf("%d", Bigger_than(array, SIZE, dig));
-return 0;
+	return 0;
 }
