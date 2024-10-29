@@ -39,7 +39,7 @@ if((fp = fopen(output_fn, "w")) == NULL)
 
 for (int i = 0; i < count; i++)
 { 	
-		fprintf(fp, "%c", line[i]);
+	fprintf(fp, "%c", line[i]);
 }
 	fclose(fp); 	
 	return 0;

@@ -6,21 +6,21 @@ void BubbleSort(int* array, int n)
 {
 	int noSwap;
 	int temp;
-    for (int i = 0; i < n; i++)
-    {
-        noSwap = 1;
-        for (int j = n-1; j > i; j--)
-        {
-			if(array[j-1] > array[j])
-            {
-                temp = array[j-1];
-                array[j-1] = array[j];
-                array[j] = temp;
-                noSwap = 0;
-            }
+	for (int i = 0; i < n; i++)
+	{
+		noSwap = 1;
+		for (int j = n-1; j > i; j--)
+	{
+	if(array[j-1] > array[j])
+	{
+		temp = array[j-1];
+		array[j-1] = array[j];
+		array[j] = temp;
+		noSwap = 0;
+	}
         }
-        if(noSwap)
-            break;
+	if(noSwap)
+		break;
     }
 }
 

@@ -26,7 +26,7 @@ while(((c = getc(fp)) != EOF) && (c != '\n'))
 	last_char = c;
 }
 if(last_char == 'a')
-		number_word_a++;
+	number_word_a++;
 fclose(fp);	
 
 
