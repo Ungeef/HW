@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <string.h>
+ 
+#define line_width 1001
+ 
+int main(void)
+{
+char * input_fn = "input.txt";
+char * output_fn = "output.txt";
+char line[line_width];
+char c;
+FILE *fp;
+
+
+if((fp = fopen(input_fn, "r")) == NULL)
+{
+	perror("Error occured while opening input file!");
+	return 1;
+}
+
+
+int count = 0;
+fscanf (fp, "%[^\n]", &line);
+ 
+fclose(fp);	
+if((fp = fopen(output_fn, "w")) == NULL)
+{
+	perror("Error occured while opening output file!");
+	return 1;
+} 
+
+_Bool is_double_space = 1;
+for(int i = 0; i < strlen(line); i++)
+{
+	
+	while(line[i] != ' ')
+	{
+		is_double_space = 0;
+		if(line[i] == 0)
+		{
+			fclose(fp); 	
+			return 0;
+		}
+		fprintf(fp, "%c", line[i++]);
+	}
+	if(is_double_space == 0)
+	{
+		fprintf(fp, "\n");
+		is_double_space = 1;
+	}
+	
+}
+}
