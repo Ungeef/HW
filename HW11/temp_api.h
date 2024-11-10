@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <string.h>
 
-typedef struct 
+typedef struct
 {
     uint8_t minute;
     uint8_t hour;
