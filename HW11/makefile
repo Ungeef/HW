@@ -1,10 +1,10 @@
 all: prog
 
-prog: temp_api.o
-	gcc -o prog temp_api.o
+prog: function_temp.o
+	gcc -o prog function_temp.o
 
-temp_api.o: temp_api.c
-	gcc -c -o temp_api.o temp_api.c
+function_temp.o: function_temp.c
+	gcc -c -o function_temp.o function_temp.c
 
 clean:
 	del *.o

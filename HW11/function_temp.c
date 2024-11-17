@@ -1,5 +1,5 @@
 
-#include "temp_api.h"
+#include "temp_lib.h"
 #define SIZE 30
 void cgangeIJ(sensor *info, int i, int j)
 {
@@ -55,12 +55,8 @@ void print(sensor *info, int number)
                info[i].day,
                info[i].t);
 }
-void month_avg_temp(sensor *info, int number, uint8_t month) {};
-void month_min_temp(sensor *info, int number, uint8_t month) {};
-void month_max_temp(sensor *info, int number, uint8_t month) {};
-void year_avg_temp(sensor *info, int number, uint16_t year) {};
-void year_min_temp(sensor *info, int number, uint16_t year) {};
-void year_max_temp(sensor *info, int number, uint16_t year) {};
+float Month_statistic(sensor st, int count, int month_usr_take){};
+void Year_statistic(sensor st, int count, float avg){};
 
 int main(void)
 {
